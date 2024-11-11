@@ -178,7 +178,7 @@ class _EducationScreenState extends State<EducationScreen> {
 class ProgressBar extends StatelessWidget {
   final int currentIndex;
 
-  const ProgressBar({required this.currentIndex});
+  const ProgressBar({super.key, required this.currentIndex});
 
   @override
   Widget build(BuildContext context) {

@@ -58,14 +58,14 @@ class _Code1 extends State<Code2> {
                           ],
                         ),
                       ),
-                      Container(
+                      SizedBox(
                         height: 60,
                         width: 60,
                         child:
                             Image.asset("assets/svg/image-landingpage/hii.png"),
                       ),
                       const SizedBox(width: 20), // Spacing between images
-                      Container(
+                      SizedBox(
                         height: 120,
                         width: 120,
                         child:
@@ -215,7 +215,7 @@ class _Code1 extends State<Code2> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => ResumeAnalyse()),
+                            builder: (context) => const ResumeAnalyse()),
                       );
                     },
                     child: ActionButton(
@@ -307,11 +307,11 @@ class ActionButton extends StatelessWidget {
   final String subtitle;
 
   const ActionButton({
-    Key? key,
+    super.key,
     this.color,
     required this.title,
     required this.subtitle,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -369,10 +369,10 @@ class CompanyIcon extends StatelessWidget {
   final String companyName;
 
   const CompanyIcon({
-    Key? key,
+    super.key,
     required this.iconUrl,
     required this.companyName,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

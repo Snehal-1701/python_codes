@@ -8,7 +8,7 @@ class SkillsScreen extends StatelessWidget {
   void _onAddSkillPressed(BuildContext context) {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => SelectSkillsScreen()),
+      MaterialPageRoute(builder: (context) => const SelectSkillsScreen()),
     );
   }
 
@@ -29,7 +29,7 @@ class SkillsScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            ProgressBar(currentIndex: 2), // Progress bar for skills step
+            const ProgressBar(currentIndex: 2), // Progress bar for skills step
             const SizedBox(height: 24),
             Container(
               padding: const EdgeInsets.all(16),
@@ -54,7 +54,7 @@ class SkillsScreen extends StatelessWidget {
                       ),
                       padding: const EdgeInsets.symmetric(
                           vertical: 12, horizontal: 16),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           "+ Add a Skill",
                           style: TextStyle(fontSize: 16, color: Colors.black),
@@ -82,18 +82,18 @@ class SelectSkillsScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Select Your Skills"),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
+      body: const Padding(
+        padding: EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
+            Text(
               "Select Your Skills",
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 8),
-            const Text("Select a maximum of 12 skills"),
-            const SizedBox(height: 16),
+            SizedBox(height: 8),
+            Text("Select a maximum of 12 skills"),
+            SizedBox(height: 16),
             Wrap(
               spacing: 8,
               runSpacing: 8,
@@ -116,7 +116,7 @@ class SelectSkillsScreen extends StatelessWidget {
 class SkillChip extends StatelessWidget {
   final String label;
 
-  const SkillChip({required this.label});
+  const SkillChip({super.key, required this.label});
 
   @override
   Widget build(BuildContext context) {

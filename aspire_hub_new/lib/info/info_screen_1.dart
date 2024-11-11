@@ -42,7 +42,7 @@ class _GeneralInformationScreenState extends State<GeneralInformationScreen> {
     
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => EducationScreen()),
+      MaterialPageRoute(builder: (context) => const EducationScreen()),
     );
     // You can also navigate to the next screen if needed
   }
@@ -159,7 +159,7 @@ class CustomTextField extends StatelessWidget {
   final String hintText;
   final TextInputType keyboardType;
 
-  CustomTextField({
+  const CustomTextField({super.key, 
     required this.controller,
     required this.label,
     required this.hintText,

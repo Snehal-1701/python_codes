@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "355503268305",
+    "project_id": "aspirehub-42d43",
+    "storage_bucket": "aspirehub-42d43.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:355503268305:android:356f3dfee9c11eb68000f0",
+        "android_client_info": {
+          "package_name": "com.example.aspire_hub_new"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCoRWXWNflUYrJ-r4EbXX82OoaUeU3v8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

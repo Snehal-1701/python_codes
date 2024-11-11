@@ -589,8 +589,9 @@ void main() {
 class ResumeAnalyse extends StatelessWidget {
   const ResumeAnalyse({super.key});
 
+  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Resumes(),
     );
@@ -598,6 +599,9 @@ class ResumeAnalyse extends StatelessWidget {
 }
 
 class Resumes extends StatefulWidget {
+  const Resumes({super.key});
+
+  @override
   State createState() => ResumeScreen();
 }
 
@@ -610,6 +614,7 @@ class ResumeScreen extends State<Resumes> {
     [const Color.fromARGB(255, 3, 116, 44), const Color.fromARGB(255, 1, 37, 2)]
   ];
 
+  @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
 
@@ -775,7 +780,7 @@ class ResumeScreen extends State<Resumes> {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                Container(
+                SizedBox(
                   width: size.width * 0.4,
                   child: Text(
                     description,
